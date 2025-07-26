@@ -8,7 +8,7 @@ const cloudinary = require("cloudinary");
 const bodyParser = require("body-parser");
 const fileUpload = require("express-fileupload");
 const cors=require("cors");
-const stripe=require("stripe")("sk_test_51KVzMySFWvR6XE1YibTsOQVGXXVtCjUY2IvNlXEbzlCTOb0hkngXsvAI2kcExNchbesK4jiTv4cpPCOjMHN7jYgF00TjjjozYy")
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const uuid=require("uuid");
 
 
